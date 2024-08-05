@@ -1,0 +1,120 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #1c3d5a;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.inicio {
+    text-align: center;
+    padding: 50px;
+    background-color: #e8ebed;
+}
+
+.inicio h2 {
+    color: #1c3d5a;
+}
+
+.btn-comenzar {
+    display: inline-block;
+    background-color: #1c3d5a;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+#presupuestos {
+    padding: 20px;
+}
+
+#presupuestos form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#presupuestos form label {
+    display: block;
+    margin-top: 10px;
+}
+
+#presupuestos form input,
+#presupuestos form select,
+#presupuestos form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    box-sizing: border-box;
+}
+
+#presupuestos form button {
+    background-color: #1c3d5a;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+#presupuestos .resumen-presupuesto {
+    margin-top: 30px;
+}
+
+#presupuestos .resumen-presupuesto table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#presupuestos .resumen-presupuesto th,
+#presupuestos .resumen-presupuesto td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#presupuestos .total {
+    margin-top: 20px;
+    text-align: right;
+    font-size: 1.2em;
+}
+
+footer {
+    background-color: #1c3d5a;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

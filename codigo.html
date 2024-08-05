@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FP Aberturas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <div class="logo">
+            <h1>FP Aberturas</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Presupuestos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Inicio -->
+    <section class="inicio">
+        <h2>Bienvenido a FP Aberturas</h2>
+        <p>Realiza tus presupuestos de aberturas de aluminio de manera sencilla y rápida.</p>
+        <a href="#presupuestos" class="btn-comenzar">Comenzar</a>
+    </section>
+
+    <!-- Sección de Presupuestos -->
+    <section id="presupuestos">
+        <h2>Presupuestos</h2>
+        <form>
+            <label for="tipo-abertura">Tipo de Abertura:</label>
+            <select id="tipo-abertura" name="tipo-abertura">
+                <option value="puerta-abatible">Puerta Abatible</option>
+                <option value="puerta-corrediza">Puerta Corrediza</option>
+                <option value="ventana-abatible">Ventana Abatible</option>
+                <option value="ventana-corrediza">Ventana Corrediza</option>
+                <option value="mosquitero">Mosquitero</option>
+            </select>
+
+            <div class="imagen-ejemplo">
+                <img src="ejemplo.png" alt="Ejemplo de Abertura">
+            </div>
+
+            <label for="dimensiones">Dimensiones (Alto x Ancho):</label>
+            <input type="text" id="alto" name="alto" placeholder="Alto">
+            <input type="text" id="ancho" name="ancho" placeholder="Ancho">
+
+            <label for="linea">Línea:</label>
+            <input type="text" id="linea" name="linea">
+
+            <label for="tipo-vidrio">Tipo de Vidrio:</label>
+            <input type="text" id="tipo-vidrio" name="tipo-vidrio">
+
+            <label for="herrajes">Incluye Herrajes:</label>
+            <input type="checkbox" id="herrajes" name="herrajes">
+
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" name="cantidad" min="1">
+
+            <label for="precio-unitario">Precio Unitario:</label>
+            <input type="text" id="precio-unitario" name="precio-unitario">
+
+            <label for="observaciones">Observaciones:</label>
+            <textarea id="observaciones" name="observaciones"></textarea>
+
+            <button type="submit">Agregar</button>
+        </form>
+
+        <div class="resumen-presupuesto">
+            <h3>Resumen del Presupuesto</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Dimensiones</th>
+                        <th>Línea</th>
+                        <th>Vidrio</th>
+                        <th>Herrajes</th>
+                        <th>Cantidad</th>
+                        <th>Precio Unitario</th>
+                        <th>Total</th>
+                        <th>Observaciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Aquí se mostrarán las aberturas agregadas -->
+                </tbody>
+            </table>
+            <div class="total">
+                <strong>Total:</strong> <span id="total-presupuesto">$0.00</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer>
+        <p>© 2024 FP Aberturas. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
